@@ -1,18 +1,17 @@
-//
-//  ContentView.swift
-//  Tripie
-//
-//  Created by janoskvara on 10/26/21.
-//
-
 import SwiftUI
 
+
 struct ContentView: View {
+    @State private var selected = false
+
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        ZStack {
+            NavigationBar()
+        }
     }
 }
+
+
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {

@@ -8,24 +8,56 @@
 
 /* Begin PBXBuildFile section */
 		5B76C62C27286F9500BFB7F4 /* TripieApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B76C62B27286F9500BFB7F4 /* TripieApp.swift */; };
-		5B76C62E27286F9500BFB7F4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B76C62D27286F9500BFB7F4 /* ContentView.swift */; };
 		5B76C63027286F9900BFB7F4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5B76C62F27286F9900BFB7F4 /* Assets.xcassets */; };
 		5B76C63327286F9900BFB7F4 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5B76C63227286F9900BFB7F4 /* Preview Assets.xcassets */; };
 		5B76C63C2728719B00BFB7F4 /* ApiStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B76C63B2728719B00BFB7F4 /* ApiStruct.swift */; };
 		5B76C63E272871E200BFB7F4 /* MenuBars.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B76C63D272871E200BFB7F4 /* MenuBars.swift */; };
 		5B76C6402728722700BFB7F4 /* Places.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B76C63F2728722700BFB7F4 /* Places.swift */; };
+		5B76C6432728735F00BFB7F4 /* ApiCall.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B76C6422728735F00BFB7F4 /* ApiCall.swift */; };
+		5B76C645272873BF00BFB7F4 /* CurrentLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B76C644272873BF00BFB7F4 /* CurrentLocation.swift */; };
+		5B76C6482728749000BFB7F4 /* Contacs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B76C6472728749000BFB7F4 /* Contacs.swift */; };
+		5B76C64A272874D100BFB7F4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B76C649272874D100BFB7F4 /* ContentView.swift */; };
+		5B76C64C2728752800BFB7F4 /* FavoritePlaces.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B76C64B2728752800BFB7F4 /* FavoritePlaces.swift */; };
+		5B76C64E2728756A00BFB7F4 /* FoundPlaceDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B76C64D2728756A00BFB7F4 /* FoundPlaceDetail.swift */; };
+		5B76C6502728760100BFB7F4 /* MyTrips.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B76C64F2728760100BFB7F4 /* MyTrips.swift */; };
+		5B76C655272876CF00BFB7F4 /* AimCross.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B76C654272876CF00BFB7F4 /* AimCross.swift */; };
+		5B76C6572728771A00BFB7F4 /* LocateButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B76C6562728771A00BFB7F4 /* LocateButton.swift */; };
+		5B76C6592728777700BFB7F4 /* MapPlaceSelection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B76C6582728777700BFB7F4 /* MapPlaceSelection.swift */; };
+		5B76C65B272877A600BFB7F4 /* MapSelector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B76C65A272877A600BFB7F4 /* MapSelector.swift */; };
+		5B76C65D272877F300BFB7F4 /* SearchPlacesButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B76C65C272877F300BFB7F4 /* SearchPlacesButton.swift */; };
+		5B76C65F2728786000BFB7F4 /* MenuBarItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B76C65E2728786000BFB7F4 /* MenuBarItem.swift */; };
+		5B76C6612728788D00BFB7F4 /* NavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B76C6602728788D00BFB7F4 /* NavigationBar.swift */; };
+		5B76C663272878EC00BFB7F4 /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B76C662272878EC00BFB7F4 /* SearchBar.swift */; };
+		5B76C6652728791600BFB7F4 /* FoundPlace.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B76C6642728791600BFB7F4 /* FoundPlace.swift */; };
+		5B76C6672728795700BFB7F4 /* DiscoverPlaces.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B76C6662728795700BFB7F4 /* DiscoverPlaces.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		5B76C62827286F9500BFB7F4 /* Tripie.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tripie.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5B76C62B27286F9500BFB7F4 /* TripieApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripieApp.swift; sourceTree = "<group>"; };
-		5B76C62D27286F9500BFB7F4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		5B76C62F27286F9900BFB7F4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5B76C63227286F9900BFB7F4 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		5B76C63427286F9900BFB7F4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5B76C63B2728719B00BFB7F4 /* ApiStruct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiStruct.swift; sourceTree = "<group>"; };
 		5B76C63D272871E200BFB7F4 /* MenuBars.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuBars.swift; sourceTree = "<group>"; };
 		5B76C63F2728722700BFB7F4 /* Places.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Places.swift; sourceTree = "<group>"; };
+		5B76C6422728735F00BFB7F4 /* ApiCall.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiCall.swift; sourceTree = "<group>"; };
+		5B76C644272873BF00BFB7F4 /* CurrentLocation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentLocation.swift; sourceTree = "<group>"; };
+		5B76C6472728749000BFB7F4 /* Contacs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Contacs.swift; sourceTree = "<group>"; };
+		5B76C649272874D100BFB7F4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		5B76C64B2728752800BFB7F4 /* FavoritePlaces.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritePlaces.swift; sourceTree = "<group>"; };
+		5B76C64D2728756A00BFB7F4 /* FoundPlaceDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoundPlaceDetail.swift; sourceTree = "<group>"; };
+		5B76C64F2728760100BFB7F4 /* MyTrips.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTrips.swift; sourceTree = "<group>"; };
+		5B76C654272876CF00BFB7F4 /* AimCross.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AimCross.swift; sourceTree = "<group>"; };
+		5B76C6562728771A00BFB7F4 /* LocateButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocateButton.swift; sourceTree = "<group>"; };
+		5B76C6582728777700BFB7F4 /* MapPlaceSelection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapPlaceSelection.swift; sourceTree = "<group>"; };
+		5B76C65A272877A600BFB7F4 /* MapSelector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapSelector.swift; sourceTree = "<group>"; };
+		5B76C65C272877F300BFB7F4 /* SearchPlacesButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchPlacesButton.swift; sourceTree = "<group>"; };
+		5B76C65E2728786000BFB7F4 /* MenuBarItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuBarItem.swift; sourceTree = "<group>"; };
+		5B76C6602728788D00BFB7F4 /* NavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationBar.swift; sourceTree = "<group>"; };
+		5B76C662272878EC00BFB7F4 /* SearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBar.swift; sourceTree = "<group>"; };
+		5B76C6642728791600BFB7F4 /* FoundPlace.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoundPlace.swift; sourceTree = "<group>"; };
+		5B76C6662728795700BFB7F4 /* DiscoverPlaces.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoverPlaces.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,9 +90,10 @@
 		5B76C62A27286F9500BFB7F4 /* Tripie */ = {
 			isa = PBXGroup;
 			children = (
+				5B76C646272873FC00BFB7F4 /* Views */,
+				5B76C6412728734300BFB7F4 /* ViewModel */,
 				5B76C63A2728716A00BFB7F4 /* Models */,
 				5B76C62B27286F9500BFB7F4 /* TripieApp.swift */,
-				5B76C62D27286F9500BFB7F4 /* ContentView.swift */,
 				5B76C62F27286F9900BFB7F4 /* Assets.xcassets */,
 				5B76C63427286F9900BFB7F4 /* Info.plist */,
 				5B76C63127286F9900BFB7F4 /* Preview Content */,
@@ -84,6 +117,61 @@
 				5B76C63F2728722700BFB7F4 /* Places.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		5B76C6412728734300BFB7F4 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				5B76C6422728735F00BFB7F4 /* ApiCall.swift */,
+				5B76C644272873BF00BFB7F4 /* CurrentLocation.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		5B76C646272873FC00BFB7F4 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				5B76C653272876AA00BFB7F4 /* FoundPlaces */,
+				5B76C652272876A000BFB7F4 /* MapScreen */,
+				5B76C6512728769300BFB7F4 /* MapPlaceSelection */,
+				5B76C6472728749000BFB7F4 /* Contacs.swift */,
+				5B76C649272874D100BFB7F4 /* ContentView.swift */,
+				5B76C64B2728752800BFB7F4 /* FavoritePlaces.swift */,
+				5B76C64D2728756A00BFB7F4 /* FoundPlaceDetail.swift */,
+				5B76C64F2728760100BFB7F4 /* MyTrips.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		5B76C6512728769300BFB7F4 /* MapPlaceSelection */ = {
+			isa = PBXGroup;
+			children = (
+				5B76C654272876CF00BFB7F4 /* AimCross.swift */,
+				5B76C6562728771A00BFB7F4 /* LocateButton.swift */,
+				5B76C6582728777700BFB7F4 /* MapPlaceSelection.swift */,
+				5B76C65A272877A600BFB7F4 /* MapSelector.swift */,
+				5B76C65C272877F300BFB7F4 /* SearchPlacesButton.swift */,
+			);
+			path = MapPlaceSelection;
+			sourceTree = "<group>";
+		};
+		5B76C652272876A000BFB7F4 /* MapScreen */ = {
+			isa = PBXGroup;
+			children = (
+				5B76C65E2728786000BFB7F4 /* MenuBarItem.swift */,
+				5B76C6602728788D00BFB7F4 /* NavigationBar.swift */,
+			);
+			path = MapScreen;
+			sourceTree = "<group>";
+		};
+		5B76C653272876AA00BFB7F4 /* FoundPlaces */ = {
+			isa = PBXGroup;
+			children = (
+				5B76C662272878EC00BFB7F4 /* SearchBar.swift */,
+				5B76C6642728791600BFB7F4 /* FoundPlace.swift */,
+				5B76C6662728795700BFB7F4 /* DiscoverPlaces.swift */,
+			);
+			path = FoundPlaces;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -157,8 +245,24 @@
 			files = (
 				5B76C6402728722700BFB7F4 /* Places.swift in Sources */,
 				5B76C63C2728719B00BFB7F4 /* ApiStruct.swift in Sources */,
-				5B76C62E27286F9500BFB7F4 /* ContentView.swift in Sources */,
+				5B76C6672728795700BFB7F4 /* DiscoverPlaces.swift in Sources */,
+				5B76C65F2728786000BFB7F4 /* MenuBarItem.swift in Sources */,
+				5B76C64C2728752800BFB7F4 /* FavoritePlaces.swift in Sources */,
+				5B76C64E2728756A00BFB7F4 /* FoundPlaceDetail.swift in Sources */,
+				5B76C6612728788D00BFB7F4 /* NavigationBar.swift in Sources */,
+				5B76C6502728760100BFB7F4 /* MyTrips.swift in Sources */,
+				5B76C6482728749000BFB7F4 /* Contacs.swift in Sources */,
+				5B76C645272873BF00BFB7F4 /* CurrentLocation.swift in Sources */,
+				5B76C64A272874D100BFB7F4 /* ContentView.swift in Sources */,
+				5B76C6572728771A00BFB7F4 /* LocateButton.swift in Sources */,
 				5B76C63E272871E200BFB7F4 /* MenuBars.swift in Sources */,
+				5B76C6432728735F00BFB7F4 /* ApiCall.swift in Sources */,
+				5B76C6592728777700BFB7F4 /* MapPlaceSelection.swift in Sources */,
+				5B76C65B272877A600BFB7F4 /* MapSelector.swift in Sources */,
+				5B76C663272878EC00BFB7F4 /* SearchBar.swift in Sources */,
+				5B76C6652728791600BFB7F4 /* FoundPlace.swift in Sources */,
+				5B76C65D272877F300BFB7F4 /* SearchPlacesButton.swift in Sources */,
+				5B76C655272876CF00BFB7F4 /* AimCross.swift in Sources */,
 				5B76C62C27286F9500BFB7F4 /* TripieApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
