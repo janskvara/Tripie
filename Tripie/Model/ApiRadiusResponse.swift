@@ -4,13 +4,14 @@
 //
 //  Created by Jakub Kachlík on 24.10.2021.
 //
+
 import Foundation
 
-struct APIAnswer:Codable{
+struct ApiRadiusAnswer:Codable{
     let type : String
     let features : [Features]
 }
-struct Features : Codable{
+struct Features : Codable, Identifiable{
     let type : String
     let id : String
     let geometry : Geometry

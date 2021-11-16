@@ -1,14 +1,15 @@
 //
 //  MyTrips.swift
-//  Tripie
+//  OnlyMapView
 //
-//  Created by Jakub Kachlík on 15.10.2021.
+//  Created by Jakub Kachlík on 06.11.2021.
 //
+
 import SwiftUI
 
 struct MyTrips: View {
     var body: some View {
-        Text("My trips")
+        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
     }
 }
 
