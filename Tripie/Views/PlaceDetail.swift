@@ -68,15 +68,15 @@ Spacer()
                     Button(action: {}){
                         Label("Favorite", systemImage: "heart")
                     }
-                    .buttonStyle(.borderedProminent)
-                    .tint(.red)
+                    //.buttonStyle(.borderedProminent)
+                    //.tint(.red)
                     
                     Spacer()
                     Button(action: {}){
                         Label("Add to trip", systemImage: "map")
                     }
-                    .buttonStyle(.borderedProminent)
-                    .tint(.blue)
+                    //.buttonStyle(.borderedProminent)
+                    //.tint(.blue)
                 }
                 .padding(.horizontal, 25.0)
             }

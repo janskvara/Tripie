@@ -38,7 +38,8 @@ struct FilterUI: View {
             }){
                 Text("Apply")
             }
-                                    .buttonStyle(.automatic))
+            //.buttonStyle(.auto)
+            )
         
     }
 }

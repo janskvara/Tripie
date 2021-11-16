@@ -56,7 +56,7 @@ struct MapScreen: View {
                         .stroke(lineWidth: 5)
                         .cornerRadius(.infinity)
                         .foregroundColor(.blue)
-                        .frame(width: geometry.size.width*(RatingSlider/100), height: geometry.size.width*(RatingSlider/100))
+                        .frame(width:  geometry.size.width*(CGFloat(RatingSlider)/100), height: geometry.size.width*(CGFloat(RatingSlider)/100))
                     VStack(alignment:.trailing) {
                         HStack(alignment:.top) {
                             NavigationLink(destination: FilterUI(FilterModel: $FilterModel, Markers: GottenApiResults, MapCoordinates: $MapCoordinates, searchRadius: Int(MapCoordinates.defaultLocation.span.longitudeDelta * 111139 / 3 * (RatingSlider/100))))
@@ -146,7 +146,7 @@ struct MapScreen: View {
                             Spacer()
                         }
                         .frame(width: geometry.size.width, height: geometry.size.height/2)
-                        .background(.ultraThinMaterial)
+                        //.background(.ultraThinMaterial)
                         .overlay(
                             RoundedRectangle(cornerRadius: 10)
                                 .stroke(Color.black, lineWidth:2)
