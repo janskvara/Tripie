@@ -11,6 +11,7 @@ import SwiftUI
 struct PlaceDetail: View {
     @State var place : Features
     @ObservedObject var detail = Api()
+    @State var safariOpened: Bool = false
     
     init(place:Features){
         self.place = place
@@ -31,10 +32,13 @@ struct PlaceDetail: View {
                         .padding(.bottom, 3)
                     if (detail.detail != nil){
                         if let imageURL = self.detail.detail!.image{
-                            Link(destination:URL(string: imageURL)!){
-                                Label("Picture", systemImage: "photo")
-                                    .padding(.bottom, 3)
-                            }
+                            Label("Picture", systemImage: "photo")
+                                .onTapGesture {
+                                    safariOpened.toggle()
+                                }
+                                .fullScreenCover(isPresented: $safariOpened){
+                                    SFSafariViewWrapper(url: URL(string: imageURL)!)
+                                }
                         }
                         if let wikiURL = self.detail.detail!.wikipedia{
                             Link(destination:URL(string: wikiURL)!){
@@ -67,7 +71,9 @@ Spacer()
                 HStack{
                     Button(action: {}){
                         Label("Favorite", systemImage: "heart")
+                            .foregroundColor(.red)
                     }
+
                     //.buttonStyle(.borderedProminent)
                     //.tint(.red)
                     
@@ -75,6 +81,7 @@ Spacer()
                     Button(action: {}){
                         Label("Add to trip", systemImage: "map")
                     }
+
                     //.buttonStyle(.borderedProminent)
                     //.tint(.blue)
                 }

@@ -56,7 +56,8 @@ struct MapScreen: View {
                         .stroke(lineWidth: 5)
                         .cornerRadius(.infinity)
                         .foregroundColor(.blue)
-                        .frame(width:  geometry.size.width*(CGFloat(RatingSlider)/100), height: geometry.size.width*(CGFloat(RatingSlider)/100))
+                        .frame(width: geometry.size.width*(CGFloat(RatingSlider)/100), height: geometry.size.width*(CGFloat(RatingSlider)/100))
+
                     VStack(alignment:.trailing) {
                         HStack(alignment:.top) {
                             NavigationLink(destination: FilterUI(FilterModel: $FilterModel, Markers: GottenApiResults, MapCoordinates: $MapCoordinates, searchRadius: Int(MapCoordinates.defaultLocation.span.longitudeDelta * 111139 / 3 * (RatingSlider/100))))
@@ -138,13 +139,14 @@ struct MapScreen: View {
 
                                 Text("Place rating (1-7): \((ShownPlace != nil) ? String(ShownPlace!.properties.rate) : "no data")")
                                     .padding(5)
-                                Text("Categories: \((ShownPlace != nil) ? ShownPlace!.properties.kinds ?? "Empty" : "no assigned categories")")
-                                    .lineLimit(1)
+                                Text("Categories: \((ShownPlace != nil) ? (ShownPlace!.properties.kinds)?.replacingOccurrences(of: "_", with: " ").replacingOccurrences(of: ",", with: ", ") ?? "Empty" : "no assigned categories")")
+                                    .lineLimit(3)
                                     .padding(5)
                                 Spacer()
                             }
                             Spacer()
                         }
+
                         .frame(width: geometry.size.width, height: geometry.size.height/2)
                         //.background(.ultraThinMaterial)
                         .overlay(
