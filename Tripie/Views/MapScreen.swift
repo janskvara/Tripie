@@ -47,7 +47,7 @@ struct MapScreen: View {
                                 .font(.largeTitle)
                                 .foregroundColor(.blue)
                                 .background(Color.white)
-                                .cornerRadius(.infinity)
+                                .cornerRadius(20)
                             }
                         }
                     })

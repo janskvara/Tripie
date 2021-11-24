@@ -39,6 +39,8 @@ struct PlaceDetail: View {
                                 .fullScreenCover(isPresented: $safariOpened){
                                     SFSafariViewWrapper(url: URL(string: imageURL)!)
                                 }
+                                .padding(.bottom, 3)
+
                         }
                         if let wikiURL = self.detail.detail!.wikipedia{
                             Link(destination:URL(string: wikiURL)!){

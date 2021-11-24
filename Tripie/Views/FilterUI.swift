@@ -20,22 +20,22 @@ struct FilterUI: View {
             VStack {
                 List{
                     
-                    Section("Number of results") {
+                   // Section("Number of results") {
                         HStack{
                             Slider(value: $FilterModel.limit, in: 1...50, step: 1)
                             Text(String(Int(FilterModel.limit)))
                         }
-                    }
+                   // }
                 
                     Section(header:Text("FAMOUS RATE"), footer:Text("h - cultural heritage")){
                         Picker("Minimum famous rate", selection: $FilterModel.rate){
                             ForEach(FilterModel.rateOptions, id:\.self){
                                 Text($0)
                             }
-                        }.pickerStyle(.segmented)
+                        }//.pickerStyle(.segmented)
                         
                     }.textCase(nil)
-                    Section ("Category of places") {
+                    //Section ("Category of places") {
                         HStack {
                             Button(action:{
                                 withAnimation{
@@ -74,8 +74,8 @@ struct FilterUI: View {
                         Toggle("Sport", isOn: $FilterModel.categories.sport)
                         Toggle("Tourist facilites", isOn: $FilterModel.categories.touristFacilities)
                         }
-                    }
-                }.listStyle(.insetGrouped)
+                    //}
+                }//.listStyle(.insetGrouped)
             }
 
     
