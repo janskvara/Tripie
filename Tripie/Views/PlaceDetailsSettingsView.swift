@@ -26,7 +26,6 @@ struct PlaceDetailsSettingsView: View {
         ZStack{
             VStack(alignment: .leading) {
                 PlaceDetail(detailsOfPlace: PlaceDetailModel(name: place.properties.name, dist: place.properties.dist, rate: place.properties.rate, imageUrl: self.apiDetail.detail?.image, wikipeida: self.apiDetail.detail?.wikipedia, website: self.apiDetail.detail?.url, placeDescription: self.apiDetail.detail?.wikipedia_extracts?.text))
-                    .padding(.bottom, 20)
                 Spacer()
                 HStack{
                     Button(action: {addPlacesToFavorite()}){
@@ -53,8 +52,8 @@ struct PlaceDetailsSettingsView: View {
                         addPlaceToTrip(trip: tag)
                         return
                     }
-                }
-            }.padding()
+                }.padding()
+            }
             AddTripAlert(title: "Add Trip", isShown: $isPresented, text: $text, onDone: { nameOfTrip in
                 let trip = Trip(context: moc)
                 trip.id = UUID()

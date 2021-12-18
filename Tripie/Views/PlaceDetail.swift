@@ -17,9 +17,6 @@ struct PlaceDetail: View {
                 Text(self.detailsOfPlace.name)
                     .font(.largeTitle)
                     .foregroundColor(.black)
-                Label("Distance: \(String(Int(detailsOfPlace.dist))) m", systemImage: "app.connected.to.app.below.fill")
-                    .foregroundColor(.gray)
-                    .padding(.bottom, 3)
                 Label("Famous rate: \(detailsOfPlace.rate)", systemImage: "star")
                     .foregroundColor(.gray)
                     .padding(.bottom, 3)
@@ -49,8 +46,14 @@ struct PlaceDetail: View {
 
                 if let description = self.detailsOfPlace.placeDescription{
                         ScrollView{Text(description)}
+                        .font(.subheadline)
+                        .foregroundColor(.black)
                 }
             }
+            .navigationBarTitleDisplayMode(.inline)
+
+            .padding()
+        .padding(.bottom, 20)
         .font(.title3)
         .foregroundColor(.blue)
     }

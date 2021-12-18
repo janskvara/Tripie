@@ -24,11 +24,11 @@ struct MyTrips: View {
                             Text(trip.name ?? "UnknownTrip")
                         }
                     }.onDelete(perform: self.deleteTrip)
-                }.navigationBarItems(leading:
-                                        Text("Trips").font(.largeTitle).bold().padding(.top, 0),
-                                                        trailing:
+                }
+                .navigationBarItems(trailing:
                                         Button(action:{self.isPresented = true}){
                                                             Text("+").font(.largeTitle).bold()})
+                    .navigationTitle(Text("Trips"))
             }
             AddTripAlert(title: "Add Trip", isShown: $isPresented, text: $text, onDone: { nameOfTrip in
                 let trip = Trip(context: moc)

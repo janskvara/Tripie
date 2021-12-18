@@ -148,7 +148,7 @@ struct MapScreen: View {
                         }
 
                         .frame(width: geometry.size.width, height: geometry.size.height/2)
-                        //.background(.ultraThinMaterial)
+                        .background(Color.white.opacity(0.7))
                         .overlay(
                             RoundedRectangle(cornerRadius: 10)
                                 .stroke(Color.black, lineWidth:2)
