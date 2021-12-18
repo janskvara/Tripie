@@ -19,7 +19,6 @@ struct MapScreen: View {
     @ObservedObject var GottenApiResults = Api()
     var locator = CurrentLocation()
 
-
     @State private var defaultOffset : CGFloat = 2.5
     @State var RatingSlider = 50.0
     @State var testMarkers : [Features] = []
@@ -39,6 +38,7 @@ struct MapScreen: View {
                                 self.ShownPlace = marker
                                 self.defaultRate = String(marker.properties.rate)
                                 self.defaultCategory = marker.properties.kinds
+                                self.GottenApiResults.getData(xid:marker.properties.xid)
                                 withAnimation{
                                     MapCoordinates.defaultLocation.center = CLLocationCoordinate2D(latitude: CLLocationDegrees(marker.geometry.coordinates[0]), longitude: CLLocationDegrees(marker.geometry.coordinates[1]))
                                 }
@@ -128,7 +128,7 @@ struct MapScreen: View {
                                         .font(.title)
                                         .lineLimit(1)
                                     Spacer()
-                                    NavigationLink(destination:LazyView(PlaceDetail(place: self.ShownPlace!))){
+                                    NavigationLink(destination:LazyView(PlaceDetailsSettingsView(place: self.ShownPlace!, apiDetail: self.GottenApiResults ))){
                                         Text("Find more")
                                             .font(.title3)
                                             .padding(.horizontal)

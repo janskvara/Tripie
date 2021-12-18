@@ -7,95 +7,51 @@
 
 import SwiftUI
 
-@available(iOS 15.0, *)
 struct PlaceDetail: View {
-    @State var place : Features
-    @ObservedObject var detail = Api()
+  
+    @State var detailsOfPlace : PlaceDetailModel
     @State var safariOpened: Bool = false
-    
-    init(place:Features){
-        self.place = place
-        detail.getData(xid: place.properties.xid)
-    }
     
     var body: some View {
             VStack(alignment: .leading) {
-                VStack(alignment: .leading) {
-                    Text(place.properties.name)
-                        .font(.largeTitle)
-                        .foregroundColor(.black)
-                    Label("Distance: \(String(Int(place.properties.dist))) m", systemImage: "app.connected.to.app.below.fill")
-                        .foregroundColor(.gray)
-                        .padding(.bottom, 3)
-                    Label("Famous rate: \(place.properties.rate)", systemImage: "star")
-                        .foregroundColor(.gray)
-                        .padding(.bottom, 3)
-                    if (detail.detail != nil){
-                        if let imageURL = self.detail.detail!.image{
-                            Label("Picture", systemImage: "photo")
-                                .onTapGesture {
-                                    safariOpened.toggle()
-                                }
-                                .fullScreenCover(isPresented: $safariOpened){
-                                    SFSafariViewWrapper(url: URL(string: imageURL)!)
-                                }
-                                .padding(.bottom, 3)
+                Text(self.detailsOfPlace.name)
+                    .font(.largeTitle)
+                    .foregroundColor(.black)
+                Label("Distance: \(String(Int(detailsOfPlace.dist))) m", systemImage: "app.connected.to.app.below.fill")
+                    .foregroundColor(.gray)
+                    .padding(.bottom, 3)
+                Label("Famous rate: \(detailsOfPlace.rate)", systemImage: "star")
+                    .foregroundColor(.gray)
+                    .padding(.bottom, 3)
+    
+                if let imageURL = self.detailsOfPlace.imageUrl{
+                        Label("Picture", systemImage: "photo")
+                            .onTapGesture {
+                                safariOpened.toggle()
+                            }
+                            .fullScreenCover(isPresented: $safariOpened){
+                                SFSafariViewWrapper(url: URL(string: imageURL)!)
+                            }
+                            .padding(.bottom, 3)
 
-                        }
-                        if let wikiURL = self.detail.detail!.wikipedia{
-                            Link(destination:URL(string: wikiURL)!){
-                                Label("Wikipedia", systemImage: "link")
-                                    .padding(.bottom, 3)
-                            }
-                        }
-                        if let website = self.detail.detail!.url{
-                            Link(destination:URL(string: website)!){
-                                Label("Website", systemImage: "network")
-                                    .padding(.bottom, 3)
-                            }
-                        }
                     }
-                }
-                .font(.title3)
-                .foregroundColor(.blue)
-                .padding(.bottom, 20)
-                    Spacer()
                 
-                if (detail.detail != nil){
-                    ScrollView{
-                    Text(self.detail.detail!.wikipedia_extracts?.text ?? "Not available")
+                if let wikiURL = self.detailsOfPlace.wikipeida{
+                        Link(destination:URL(string: wikiURL)!){
+                            Label("Wikipedia", systemImage: "link")
+                                .padding(.bottom, 3)}
                     }
-                }
-                else{
-                    Text("notloaded")
-                }
-Spacer()
-                HStack{
-                    Button(action: {}){
-                        Label("Favorite", systemImage: "heart")
-                            .foregroundColor(.red)
+                if let website = self.detailsOfPlace.website{
+                        Link(destination:URL(string: website)!){
+                            Label("Website", systemImage: "network")
+                                .padding(.bottom, 3)}
                     }
 
-                    //.buttonStyle(.borderedProminent)
-                    //.tint(.red)
-                    
-                    Spacer()
-                    Button(action: {}){
-                        Label("Add to trip", systemImage: "map")
-                    }
-
-                    //.buttonStyle(.borderedProminent)
-                    //.tint(.blue)
+                if let description = self.detailsOfPlace.placeDescription{
+                        ScrollView{Text(description)}
                 }
-                .padding(.horizontal, 25.0)
             }
-            .padding()
-        }
-}
-
-@available(iOS 15.0, *)
-struct PlaceDetail_Previews: PreviewProvider {
-    static var previews: some View {
-        PlaceDetail(place: Features(type: "type", id: "33", geometry: Geometry(type: "S", coordinates: [32,55]), properties: Properties(xid: "32", name: "Panství", dist: 35.6, rate: 6, osm: nil, wikidata: "Data", kinds: "koozoroh")))
+        .font(.title3)
+        .foregroundColor(.blue)
     }
 }

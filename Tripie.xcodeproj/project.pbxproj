@@ -7,9 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5B6D47BB276C8DD50069A0D0 /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B6D47BA276C8DD50069A0D0 /* DataController.swift */; };
+		5B6D47C1276C99BB0069A0D0 /* AddTripAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B6D47C0276C99BB0069A0D0 /* AddTripAlert.swift */; };
+		5B6D47C6276CC97D0069A0D0 /* Trip.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B6D47C5276CC97D0069A0D0 /* Trip.swift */; };
+		5B6D47C8276CCD620069A0D0 /* PlaceDetailsSettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B6D47C7276CCD620069A0D0 /* PlaceDetailsSettingsView.swift */; };
+		5B6D47CA276CD0270069A0D0 /* PlaceDetailModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B6D47C9276CD0270069A0D0 /* PlaceDetailModel.swift */; };
 		5B76C62C27286F9500BFB7F4 /* TripieApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B76C62B27286F9500BFB7F4 /* TripieApp.swift */; };
 		5B76C63027286F9900BFB7F4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5B76C62F27286F9900BFB7F4 /* Assets.xcassets */; };
 		5B76C63327286F9900BFB7F4 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5B76C63227286F9900BFB7F4 /* Preview Assets.xcassets */; };
+		5BB1A409276DE9AB00C0928D /* Data.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 5BB1A407276DE9AB00C0928D /* Data.xcdatamodeld */; };
 		7C0EBB332743C34600CCA442 /* ApiDetailedResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C0EBB322743C34600CCA442 /* ApiDetailedResponse.swift */; };
 		7C0EBB352743C35900CCA442 /* ApiRadiusResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C0EBB342743C35900CCA442 /* ApiRadiusResponse.swift */; };
 		7C0EBB372743C37200CCA442 /* FilterModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C0EBB362743C37200CCA442 /* FilterModel.swift */; };
@@ -32,11 +38,17 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5B6D47BA276C8DD50069A0D0 /* DataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
+		5B6D47C0276C99BB0069A0D0 /* AddTripAlert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTripAlert.swift; sourceTree = "<group>"; };
+		5B6D47C5276CC97D0069A0D0 /* Trip.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Trip.swift; sourceTree = "<group>"; };
+		5B6D47C7276CCD620069A0D0 /* PlaceDetailsSettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceDetailsSettingsView.swift; sourceTree = "<group>"; };
+		5B6D47C9276CD0270069A0D0 /* PlaceDetailModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceDetailModel.swift; sourceTree = "<group>"; };
 		5B76C62827286F9500BFB7F4 /* Tripie.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tripie.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5B76C62B27286F9500BFB7F4 /* TripieApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripieApp.swift; sourceTree = "<group>"; };
 		5B76C62F27286F9900BFB7F4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5B76C63227286F9900BFB7F4 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		5B76C63427286F9900BFB7F4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5BB1A408276DE9AB00C0928D /* Data.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Data.xcdatamodel; sourceTree = "<group>"; };
 		7C0EBB322743C34600CCA442 /* ApiDetailedResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiDetailedResponse.swift; sourceTree = "<group>"; };
 		7C0EBB342743C35900CCA442 /* ApiRadiusResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiRadiusResponse.swift; sourceTree = "<group>"; };
 		7C0EBB362743C37200CCA442 /* FilterModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterModel.swift; sourceTree = "<group>"; };
@@ -95,6 +107,8 @@
 				5B76C62F27286F9900BFB7F4 /* Assets.xcassets */,
 				5B76C63427286F9900BFB7F4 /* Info.plist */,
 				5B76C63127286F9900BFB7F4 /* Preview Content */,
+				5B6D47BA276C8DD50069A0D0 /* DataController.swift */,
+				5BB1A407276DE9AB00C0928D /* Data.xcdatamodeld */,
 			);
 			path = Tripie;
 			sourceTree = "<group>";
@@ -115,6 +129,7 @@
 				7C0EBB362743C37200CCA442 /* FilterModel.swift */,
 				7C0EBB382743C38600CCA442 /* MarkersModel.swift */,
 				7C0EBB3A2743C39D00CCA442 /* MapModel.swift */,
+				5B6D47C9276CD0270069A0D0 /* PlaceDetailModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -143,6 +158,9 @@
 				7C0EBB522743C55500CCA442 /* MyTrips.swift */,
 				7C0EBB542743C56200CCA442 /* Contacts.swift */,
 				7C0EBB4E2743C53600CCA442 /* FilterUI.swift */,
+				5B6D47C0276C99BB0069A0D0 /* AddTripAlert.swift */,
+				5B6D47C5276CC97D0069A0D0 /* Trip.swift */,
+				5B6D47C7276CCD620069A0D0 /* PlaceDetailsSettingsView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -217,15 +235,20 @@
 			buildActionMask = 2147483647;
 			files = (
 				7C0EBB432743C4B800CCA442 /* FilterViewModel.swift in Sources */,
+				5B6D47C1276C99BB0069A0D0 /* AddTripAlert.swift in Sources */,
 				7C0EBB492743C50000CCA442 /* PlaceDetail.swift in Sources */,
 				7C0EBB3F2743C49D00CCA442 /* MarkersViewModel.swift in Sources */,
 				7C0EBB4D2743C52900CCA442 /* LazyView.swift in Sources */,
 				7C0EBB552743C56200CCA442 /* Contacts.swift in Sources */,
+				5B6D47CA276CD0270069A0D0 /* PlaceDetailModel.swift in Sources */,
+				5B6D47BB276C8DD50069A0D0 /* DataController.swift in Sources */,
 				7C0EBB472743C4F300CCA442 /* ContentView.swift in Sources */,
 				7C0EBB512743C54800CCA442 /* FavoritePlaces.swift in Sources */,
 				7C0EBB3D2743C43900CCA442 /* APIcall.swift in Sources */,
+				5B6D47C8276CCD620069A0D0 /* PlaceDetailsSettingsView.swift in Sources */,
 				7C0EBB372743C37200CCA442 /* FilterModel.swift in Sources */,
 				7C0EBB452743C4C700CCA442 /* CurrentLocation.swift in Sources */,
+				5B6D47C6276CC97D0069A0D0 /* Trip.swift in Sources */,
 				7C0EBB3B2743C39D00CCA442 /* MapModel.swift in Sources */,
 				7C0EBB532743C55500CCA442 /* MyTrips.swift in Sources */,
 				7C0EBB352743C35900CCA442 /* ApiRadiusResponse.swift in Sources */,
@@ -234,6 +257,7 @@
 				7C0EBB332743C34600CCA442 /* ApiDetailedResponse.swift in Sources */,
 				7C51797627453231009AD906 /* SFSafariViewWrapper.swift in Sources */,
 				7C0EBB4F2743C53600CCA442 /* FilterUI.swift in Sources */,
+				5BB1A409276DE9AB00C0928D /* Data.xcdatamodeld in Sources */,
 				5B76C62C27286F9500BFB7F4 /* TripieApp.swift in Sources */,
 				7C0EBB412743C4A900CCA442 /* MapViewModel.swift in Sources */,
 			);
@@ -422,6 +446,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		5BB1A407276DE9AB00C0928D /* Data.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				5BB1A408276DE9AB00C0928D /* Data.xcdatamodel */,
+			);
+			currentVersion = 5BB1A408276DE9AB00C0928D /* Data.xcdatamodel */;
+			path = Data.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 5B76C62027286F9500BFB7F4 /* Project object */;
 }
