@@ -28,11 +28,18 @@ struct PlaceDetailsSettingsView: View {
                 PlaceDetail(detailsOfPlace: PlaceDetailModel(name: place.properties.name, dist: place.properties.dist, rate: place.properties.rate, imageUrl: self.apiDetail.detail?.image, wikipeida: self.apiDetail.detail?.wikipedia, website: self.apiDetail.detail?.url, placeDescription: self.apiDetail.detail?.wikipedia_extracts?.text))
                 Spacer()
                 HStack{
-                    Button(action: {addPlacesToFavorite()}){
-                        Label("Favorite", systemImage: "heart")
-                            .foregroundColor(.red)
-                    }.disabled(isPlaceAleradyInFavoritePlaces())
-                    .opacity(isPlaceAleradyInFavoritePlaces() ? 0.3 : 1)
+                    if isPlaceAleradyInFavoritePlaces() {
+                        Button(action: {removeFromFavorite()}){
+                            Label("Unfavorite", systemImage: "heart.fill")
+                                .foregroundColor(.red)
+                        }
+                    }
+                    else{
+                        Button(action: {addPlacesToFavorite()}){
+                            Label("Favorite", systemImage: "heart")
+                                .foregroundColor(.red)
+                        }
+                    }
                     
                     Spacer()
                     Picker("Add to trip", selection: $selectedItem, content: {
@@ -78,6 +85,13 @@ struct PlaceDetailsSettingsView: View {
     private func addPlaceToTrip(trip: String){
         addPlaces(trip: trip, favorite: false)
         
+    }
+    
+    private func removeFromFavorite(){
+        let elementToDelete = places.first{$0.xid == place.properties.xid}
+        moc.delete(elementToDelete!)
+        
+        try? moc.save()
     }
     
     private func addPlaces(trip:String, favorite:Bool){
