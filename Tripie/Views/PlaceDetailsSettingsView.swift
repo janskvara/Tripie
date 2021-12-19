@@ -15,6 +15,7 @@ struct PlaceDetailsSettingsView: View {
     var apiDetail: Api
     var place : Features
     @State private var isPresented: Bool = false
+    @State var alert = false
     @State private var text: String = ""
     @State private var selectedItem = "undefined"
     init(place:Features, apiDetail: Api){
@@ -32,22 +33,29 @@ struct PlaceDetailsSettingsView: View {
                         Button(action: {removeFromFavorite()}){
                             Label("Unfavorite", systemImage: "heart.fill")
                                 .foregroundColor(.red)
+                                .font(.body)
                         }
                     }
                     else{
                         Button(action: {addPlacesToFavorite()}){
                             Label("Favorite", systemImage: "heart")
                                 .foregroundColor(.red)
+                                .font(.body)
                         }
                     }
                     
                     Spacer()
                     Picker("Add to trip", selection: $selectedItem, content: {
                         Text("Add new trip").tag("Add new trip")
-                        ForEach(trips.filter({_trip in return !places.contains(where: {_place in return _place.xid == place.properties.xid && _place.trip == _trip.name})}), id: \.self){trip in
-                            Text(trip.name ?? "Unknown name").tag(trip.name ?? "Unknown name")
+                        ForEach(trips){trip in
+                            Text(trip.name ?? "Unknown name")
+                                .tag(trip.name ?? "Unknown name")
                         }
                     }).pickerStyle(MenuPickerStyle())
+                        .alert(isPresented: $alert){
+                            Alert(title: Text("Already added"), message: Text("This place is already added in selected trip"))
+                        }
+
                     .onChange(of: selectedItem){ tag in
                         if(tag == "undefined"){
                             return
@@ -57,8 +65,16 @@ struct PlaceDetailsSettingsView: View {
                             selectedItem = "undefined"
                             return
                         }
-                        addPlaceToTrip(trip: tag)
-                        return
+                        let tmp = places.first{($0.xid == place.properties.xid && $0.trip == selectedItem)}
+                        if (tmp != nil){
+                            alert.toggle()
+                            return
+                        }
+                        else{
+                            addPlaceToTrip(trip: tag)
+                            return
+                        }
+                        
                     }
                 }.padding()
             }

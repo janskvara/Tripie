@@ -7,6 +7,7 @@
 
 import SwiftUI
 
+@available(iOS 15.0, *)
 struct MyTrips: View {
     @Environment(\.managedObjectContext) var moc
     @FetchRequest(sortDescriptors: []) var trips : FetchedResults<Trip>
@@ -52,6 +53,7 @@ struct MyTrips: View {
     }
 }
 
+@available(iOS 15.0, *)
 struct MyTrips_Previews: PreviewProvider {
     static var previews: some View {
         MyTrips()
