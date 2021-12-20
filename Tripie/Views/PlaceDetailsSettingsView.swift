@@ -51,9 +51,10 @@ struct PlaceDetailsSettingsView: View {
                             Text(trip.name ?? "Unknown name")
                                 .tag(trip.name ?? "Unknown name")
                         }
-                    }).pickerStyle(MenuPickerStyle())
+                    })
+                        .pickerStyle(MenuPickerStyle())
                         .alert(isPresented: $alert){
-                            Alert(title: Text("Already added"), message: Text("This place is already added in selected trip"))
+                            Alert(title: Text("Already added"), message: Text("This place has already been added to selected trip"))
                         }
 
                     .onChange(of: selectedItem){ tag in
