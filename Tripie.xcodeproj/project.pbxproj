@@ -19,10 +19,8 @@
 		7C0EBB332743C34600CCA442 /* ApiDetailedResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C0EBB322743C34600CCA442 /* ApiDetailedResponse.swift */; };
 		7C0EBB352743C35900CCA442 /* ApiRadiusResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C0EBB342743C35900CCA442 /* ApiRadiusResponse.swift */; };
 		7C0EBB372743C37200CCA442 /* FilterModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C0EBB362743C37200CCA442 /* FilterModel.swift */; };
-		7C0EBB392743C38600CCA442 /* MarkersModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C0EBB382743C38600CCA442 /* MarkersModel.swift */; };
 		7C0EBB3B2743C39D00CCA442 /* MapModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C0EBB3A2743C39D00CCA442 /* MapModel.swift */; };
 		7C0EBB3D2743C43900CCA442 /* APIcall.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C0EBB3C2743C43900CCA442 /* APIcall.swift */; };
-		7C0EBB3F2743C49D00CCA442 /* MarkersViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C0EBB3E2743C49D00CCA442 /* MarkersViewModel.swift */; };
 		7C0EBB412743C4A900CCA442 /* MapViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C0EBB402743C4A900CCA442 /* MapViewModel.swift */; };
 		7C0EBB432743C4B800CCA442 /* FilterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C0EBB422743C4B800CCA442 /* FilterViewModel.swift */; };
 		7C0EBB452743C4C700CCA442 /* CurrentLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C0EBB442743C4C700CCA442 /* CurrentLocation.swift */; };
@@ -33,7 +31,6 @@
 		7C0EBB4F2743C53600CCA442 /* FilterUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C0EBB4E2743C53600CCA442 /* FilterUI.swift */; };
 		7C0EBB512743C54800CCA442 /* FavoritePlaces.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C0EBB502743C54800CCA442 /* FavoritePlaces.swift */; };
 		7C0EBB532743C55500CCA442 /* MyTrips.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C0EBB522743C55500CCA442 /* MyTrips.swift */; };
-		7C0EBB552743C56200CCA442 /* Contacts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C0EBB542743C56200CCA442 /* Contacts.swift */; };
 		7C51797627453231009AD906 /* SFSafariViewWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C51797527453231009AD906 /* SFSafariViewWrapper.swift */; };
 /* End PBXBuildFile section */
 
@@ -52,10 +49,8 @@
 		7C0EBB322743C34600CCA442 /* ApiDetailedResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiDetailedResponse.swift; sourceTree = "<group>"; };
 		7C0EBB342743C35900CCA442 /* ApiRadiusResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiRadiusResponse.swift; sourceTree = "<group>"; };
 		7C0EBB362743C37200CCA442 /* FilterModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterModel.swift; sourceTree = "<group>"; };
-		7C0EBB382743C38600CCA442 /* MarkersModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarkersModel.swift; sourceTree = "<group>"; };
 		7C0EBB3A2743C39D00CCA442 /* MapModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapModel.swift; sourceTree = "<group>"; };
 		7C0EBB3C2743C43900CCA442 /* APIcall.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIcall.swift; sourceTree = "<group>"; };
-		7C0EBB3E2743C49D00CCA442 /* MarkersViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarkersViewModel.swift; sourceTree = "<group>"; };
 		7C0EBB402743C4A900CCA442 /* MapViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewModel.swift; sourceTree = "<group>"; };
 		7C0EBB422743C4B800CCA442 /* FilterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterViewModel.swift; sourceTree = "<group>"; };
 		7C0EBB442743C4C700CCA442 /* CurrentLocation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentLocation.swift; sourceTree = "<group>"; };
@@ -66,7 +61,6 @@
 		7C0EBB4E2743C53600CCA442 /* FilterUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterUI.swift; sourceTree = "<group>"; };
 		7C0EBB502743C54800CCA442 /* FavoritePlaces.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritePlaces.swift; sourceTree = "<group>"; };
 		7C0EBB522743C55500CCA442 /* MyTrips.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTrips.swift; sourceTree = "<group>"; };
-		7C0EBB542743C56200CCA442 /* Contacts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Contacts.swift; sourceTree = "<group>"; };
 		7C51797527453231009AD906 /* SFSafariViewWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SFSafariViewWrapper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -127,7 +121,6 @@
 				7C0EBB322743C34600CCA442 /* ApiDetailedResponse.swift */,
 				7C0EBB342743C35900CCA442 /* ApiRadiusResponse.swift */,
 				7C0EBB362743C37200CCA442 /* FilterModel.swift */,
-				7C0EBB382743C38600CCA442 /* MarkersModel.swift */,
 				7C0EBB3A2743C39D00CCA442 /* MapModel.swift */,
 				5B6D47C9276CD0270069A0D0 /* PlaceDetailModel.swift */,
 			);
@@ -138,7 +131,6 @@
 			isa = PBXGroup;
 			children = (
 				7C0EBB3C2743C43900CCA442 /* APIcall.swift */,
-				7C0EBB3E2743C49D00CCA442 /* MarkersViewModel.swift */,
 				7C0EBB402743C4A900CCA442 /* MapViewModel.swift */,
 				7C0EBB442743C4C700CCA442 /* CurrentLocation.swift */,
 				7C0EBB422743C4B800CCA442 /* FilterViewModel.swift */,
@@ -156,7 +148,6 @@
 				7C0EBB4C2743C52900CCA442 /* LazyView.swift */,
 				7C0EBB502743C54800CCA442 /* FavoritePlaces.swift */,
 				7C0EBB522743C55500CCA442 /* MyTrips.swift */,
-				7C0EBB542743C56200CCA442 /* Contacts.swift */,
 				7C0EBB4E2743C53600CCA442 /* FilterUI.swift */,
 				5B6D47C0276C99BB0069A0D0 /* AddTripAlert.swift */,
 				5B6D47C5276CC97D0069A0D0 /* Trip.swift */,
@@ -237,9 +228,7 @@
 				7C0EBB432743C4B800CCA442 /* FilterViewModel.swift in Sources */,
 				5B6D47C1276C99BB0069A0D0 /* AddTripAlert.swift in Sources */,
 				7C0EBB492743C50000CCA442 /* PlaceDetail.swift in Sources */,
-				7C0EBB3F2743C49D00CCA442 /* MarkersViewModel.swift in Sources */,
 				7C0EBB4D2743C52900CCA442 /* LazyView.swift in Sources */,
-				7C0EBB552743C56200CCA442 /* Contacts.swift in Sources */,
 				5B6D47CA276CD0270069A0D0 /* PlaceDetailModel.swift in Sources */,
 				5B6D47BB276C8DD50069A0D0 /* DataController.swift in Sources */,
 				7C0EBB472743C4F300CCA442 /* ContentView.swift in Sources */,
@@ -252,7 +241,6 @@
 				7C0EBB3B2743C39D00CCA442 /* MapModel.swift in Sources */,
 				7C0EBB532743C55500CCA442 /* MyTrips.swift in Sources */,
 				7C0EBB352743C35900CCA442 /* ApiRadiusResponse.swift in Sources */,
-				7C0EBB392743C38600CCA442 /* MarkersModel.swift in Sources */,
 				7C0EBB4B2743C51B00CCA442 /* MapScreen.swift in Sources */,
 				7C0EBB332743C34600CCA442 /* ApiDetailedResponse.swift in Sources */,
 				7C51797627453231009AD906 /* SFSafariViewWrapper.swift in Sources */,

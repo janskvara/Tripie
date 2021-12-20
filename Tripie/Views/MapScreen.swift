@@ -8,25 +8,17 @@
 import SwiftUI
 import MapKit
 
-let iphone12Offset :CGFloat = 2.5
-let iphone8Offset :CGFloat = 3
 
 @available(iOS 15.0, *)
 struct MapScreen: View {
     @State var FilterModel = FilterViewModel().FilterModel
-    @State var MarkersModel = MarkersViewModel().MarkersModel
     @State var MapCoordinates = MapViewModel().MapModel
     @ObservedObject var GottenApiResults = Api()
     var locator = CurrentLocation()
 
     @State private var defaultOffset : CGFloat = 2.5
     @State var RatingSlider = 50.0
-    @State var testMarkers : [Features] = []
     @State var ShownPlace : Features?
-    @State var defaultRate : String?
-    @State var defaultCategory : String?
-    @State var CallLimit : Float = 10.0
-
     
     var body: some View {
         GeometryReader{ geometry in
@@ -36,8 +28,6 @@ struct MapScreen: View {
                         MapAnnotation(coordinate: CLLocationCoordinate2D(latitude: CLLocationDegrees(marker.geometry.coordinates[0]), longitude: CLLocationDegrees(marker.geometry.coordinates[1]))){
                             Button(action:{
                                 self.ShownPlace = marker
-                                self.defaultRate = String(marker.properties.rate)
-                                self.defaultCategory = marker.properties.kinds
                                 self.GottenApiResults.getData(xid:marker.properties.xid)
                                 withAnimation{
                                     MapCoordinates.defaultLocation.center = CLLocationCoordinate2D(latitude: CLLocationDegrees(marker.geometry.coordinates[0]), longitude: CLLocationDegrees(marker.geometry.coordinates[1]))

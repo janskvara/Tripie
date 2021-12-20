@@ -27,11 +27,6 @@ struct ContentView: View {
                 .tabItem{
                     Label("Favorite", systemImage: "heart")
                 }
-            Contacts()
-                .tabItem{
-                    Label("Contact", systemImage: "person.2")
-                    
-                }
             }
     }
 }

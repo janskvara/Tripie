@@ -31,7 +31,7 @@ struct TripView: View{
                         }
                         .tint(.red)
                     }
-                }//.onDelete(perform: deleteFavoritePlace)
+                }
             }
         .navigationTitle("\(self.name) trip")
     }
