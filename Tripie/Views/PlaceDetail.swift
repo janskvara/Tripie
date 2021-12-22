@@ -22,15 +22,10 @@ struct PlaceDetail: View {
                     .padding(.bottom, 3)
     
                 if let imageURL = self.detailsOfPlace.imageUrl{
+                    Link(destination: URL(string: imageURL)!){
                         Label("Picture", systemImage: "photo")
-                            .onTapGesture {
-                                safariOpened.toggle()
-                            }
-                            .fullScreenCover(isPresented: $safariOpened){
-                                SFSafariViewWrapper(url: URL(string: imageURL)!)
-                            }
                             .padding(.bottom, 3)
-
+                    }
                     }
                 
                 if let wikiURL = self.detailsOfPlace.wikipeida{

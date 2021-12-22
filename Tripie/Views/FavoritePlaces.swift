@@ -7,6 +7,7 @@
 
 import SwiftUI
 
+@available(iOS 15.0, *)
 struct FavoritePlaces: View {
     @Environment(\.managedObjectContext) var moc
     @FetchRequest(sortDescriptors: []) var places : FetchedResults<Place>
@@ -18,16 +19,22 @@ struct FavoritePlaces: View {
                     NavigationLink(destination: PlaceDetail(detailsOfPlace: PlaceDetailModel(name: place.name!, dist: place.dist, rate: Int(place.rate), imageUrl: place.imageUrl, wikipeida: place.wikipeida, website: place.website, placeDescription: place.placeDescription))){
                         Text(place.name ?? "UnknownTrip")
                     }
-                }.onDelete(perform: deleteFavoritePlace)
+                    .swipeActions{
+                        Button(action:{
+                            deleteFavoritePlace(place: place)
+                        }){
+                            Image(systemName: "trash")
+                        }
+                        .tint(.red)
+                    }
+                }
             }.navigationTitle("Favorite places")
         }
     }
     
-    private func deleteFavoritePlace(at  offsets: IndexSet){
-        for index in offsets{
-            let place = places[index]
-            moc.delete(place)
-        }
+    private func deleteFavoritePlace(place: Place){
+        let placeToDelete = places.first{$0.xid == place.xid}
+        moc.delete(placeToDelete!)
         try? moc.save()
     }
 }

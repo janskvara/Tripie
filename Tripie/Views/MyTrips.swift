@@ -24,7 +24,15 @@ struct MyTrips: View {
                         NavigationLink(destination: TripView(nameOfTrip: trip.name ?? "UnknownTrip")){
                             Text(trip.name ?? "UnknownTrip")
                         }
-                    }.onDelete(perform: self.deleteTrip)
+                        .swipeActions{
+                            Button(action:{
+                                deleteTrip(trip: trip)
+                            }){
+                                Image(systemName: "trash")
+                            }
+                            .tint(.red)
+                        }
+                    }
                 }
                 .navigationBarItems(trailing:
                                         Button(action:{self.isPresented = true}){
@@ -40,15 +48,14 @@ struct MyTrips: View {
         }
     }
     
-    private func deleteTrip(at  offsets: IndexSet){
-        for index in offsets{
-            let trip = trips[index]
-            let tripsPlaces = places.filter({place in return place.trip == trip.name})
-            for place in tripsPlaces{
-                moc.delete(place)
-            }
-            moc.delete(trip)
+    private func deleteTrip(trip:Trip){
+        
+        let tripToDelete = trips.first{$0.id == trip.id}
+        let tripsPlaces = places.filter{$0.trip == trip.name}
+        for place in tripsPlaces{
+            moc.delete(place)
         }
+        moc.delete(tripToDelete!)
         try? moc.save()
     }
 }
