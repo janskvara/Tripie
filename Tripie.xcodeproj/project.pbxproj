@@ -31,7 +31,6 @@
 		7C0EBB4F2743C53600CCA442 /* FilterUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C0EBB4E2743C53600CCA442 /* FilterUI.swift */; };
 		7C0EBB512743C54800CCA442 /* FavoritePlaces.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C0EBB502743C54800CCA442 /* FavoritePlaces.swift */; };
 		7C0EBB532743C55500CCA442 /* MyTrips.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C0EBB522743C55500CCA442 /* MyTrips.swift */; };
-		7C51797627453231009AD906 /* SFSafariViewWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C51797527453231009AD906 /* SFSafariViewWrapper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -61,7 +60,6 @@
 		7C0EBB4E2743C53600CCA442 /* FilterUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterUI.swift; sourceTree = "<group>"; };
 		7C0EBB502743C54800CCA442 /* FavoritePlaces.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritePlaces.swift; sourceTree = "<group>"; };
 		7C0EBB522743C55500CCA442 /* MyTrips.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTrips.swift; sourceTree = "<group>"; };
-		7C51797527453231009AD906 /* SFSafariViewWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SFSafariViewWrapper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -143,7 +141,6 @@
 			children = (
 				7C0EBB462743C4F300CCA442 /* ContentView.swift */,
 				7C0EBB482743C50000CCA442 /* PlaceDetail.swift */,
-				7C51797527453231009AD906 /* SFSafariViewWrapper.swift */,
 				7C0EBB4A2743C51B00CCA442 /* MapScreen.swift */,
 				7C0EBB4C2743C52900CCA442 /* LazyView.swift */,
 				7C0EBB502743C54800CCA442 /* FavoritePlaces.swift */,
@@ -243,7 +240,6 @@
 				7C0EBB352743C35900CCA442 /* ApiRadiusResponse.swift in Sources */,
 				7C0EBB4B2743C51B00CCA442 /* MapScreen.swift in Sources */,
 				7C0EBB332743C34600CCA442 /* ApiDetailedResponse.swift in Sources */,
-				7C51797627453231009AD906 /* SFSafariViewWrapper.swift in Sources */,
 				7C0EBB4F2743C53600CCA442 /* FilterUI.swift in Sources */,
 				5BB1A409276DE9AB00C0928D /* Data.xcdatamodeld in Sources */,
 				5B76C62C27286F9500BFB7F4 /* TripieApp.swift in Sources */,
